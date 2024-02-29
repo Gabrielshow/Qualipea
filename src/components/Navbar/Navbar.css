@@ -1,0 +1,37 @@
+.navbar {
+    width: 100%;
+    display: flex;
+    border: 2px solid black;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--color-blue);
+    padding: 1rem 2rem;
+
+}
+
+.navbar-logo {
+   display: flex;
+   justify-content: flex-start;
+   align-items: center; 
+}
+
+.navbar-logo img {
+    width: 150px;
+}
+
+.navbar-links{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar-links li {
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.navbar-links li:hover{
+    color: var(--color-grey);
+}
