@@ -8,8 +8,6 @@ import { ThemeProvider } from './context/ThemeContext';
 const App = () => {
   return (
     <ThemeProvider>
-
-    <div className="App">
      <Navbar/>
      <Header/>
      <About/>
@@ -17,8 +15,6 @@ const App = () => {
      <Blog/>
      <ContactUs/>
      <Footer/>
-
-    </div>
     </ThemeProvider>
   );
 }
