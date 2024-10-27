@@ -7,6 +7,7 @@
     align-items: center;
     background: rgb(7, 28, 33);
     padding: 20px 10px;
+    box-sizing: border-box;
 }
 
 .navbar-logo {
@@ -26,6 +27,8 @@
     justify-content: center;
     align-items: center;
     list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 .navbar-links li {
@@ -40,4 +43,21 @@
 
 .navbar-links li a:hover{
     color: rgb(140, 255, 110);
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack items vertically */
+        height: auto; /* Allow height to adjust */
+    }
+
+    .navbar-links {
+        flex-direction: column; /* Stack links vertically */
+        align-items: flex-start; /* Align links to the start */
+        width: 100%; /* Full width */
+    }
+
+    .navbar-links li {
+        margin: 0.5rem 0; /* Space between links */
+    }
 }

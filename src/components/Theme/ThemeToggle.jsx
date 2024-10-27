@@ -1,10 +1,13 @@
 import React, {useContext} from 'react';
 import { ThemeContext } from '../../context/ThemeContext';
+import useTheme from '../../hooks/useTheme';
 import { FaSun, FaMoon } from 'react-icons/fa';
 import './ThemeToggle.css';
 
 const ThemeToggle = () => {
-    const { theme, toggleTheme } = useContext(ThemeContext);
+    const { theme, toggleTheme } = useTheme();
+    const context = useContext(ThemeContext);
+    console.log(context); // Check what context is
 
     const updateFavicon = (theme) => {
         const faviconPath = theme === 'light' ? '../assets/favicon/white-bg/favicon.ico' : '../assets/favicon/blue-bg/favicon.ico';
