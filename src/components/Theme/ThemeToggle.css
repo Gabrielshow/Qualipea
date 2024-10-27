@@ -1,0 +1,8 @@
+.theme-icon button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: transform 0.2s;
+    margin-right: 10px;
+}

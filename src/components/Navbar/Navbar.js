@@ -1,5 +1,6 @@
 import React from 'react';
 import { images } from '../../constants';
+import ThemeToggle from '../Theme/ThemeToggle';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -14,9 +15,8 @@ const Navbar = () => {
       <li className="p-opensans"> <a href = "blog">Blog</a></li>
       <li className="p-opensans"> <a href = "ContactUs">Contact Us</a></li>
       <li className="p-opensans"> <a href = "Footer">Footer</a></li>
-
-
       </ul>
+      <ThemeToggle/>
     </nav>
   );
 }

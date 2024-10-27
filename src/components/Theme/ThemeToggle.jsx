@@ -1,6 +1,7 @@
 import React, {useContext} from 'react';
-import { ThemeContext } from '../context/ThemeContext';
+import { ThemeContext } from '../../context/ThemeContext';
 import { FaSun, FaMoon } from 'react-icons/fa';
+import './ThemeToggle.css';
 
 const ThemeToggle = () => {
     const { theme, toggleTheme } = useContext(ThemeContext);
@@ -21,11 +22,14 @@ const ThemeToggle = () => {
 
     const handleToggle = () => {
         toggleTheme();
-        updateFavicon(theme);
-    }
+        updateFavicon(theme === 'light' ? 'dark' : 'light');
+    };
+
+    console.log('Current Theme:', theme);
+
 
   return (
-    <button onClick={handleToggle} style={{background: 'none', border: 'none', cursor: 'pointer' }}>
+    <button onClick={handleToggle} className="theme-icon">
     {theme === 'light' ? (
         <FaMoon size={24} title="Switch to Dark mode"/>
         ) : (

@@ -2,10 +2,13 @@ import React from 'react';
 
 import { About , Blog, Content, Footer, ContactUs, Header} from './container';
 import { Navbar } from './components';
+import { ThemeProvider } from './context/ThemeContext';
 
 
 const App = () => {
   return (
+    <ThemeProvider>
+
     <div className="App">
      <Navbar/>
      <Header/>
@@ -16,6 +19,7 @@ const App = () => {
      <Footer/>
 
     </div>
+    </ThemeProvider>
   );
 }
 
