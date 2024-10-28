@@ -9,23 +9,28 @@
 }
 
 .image-container {
-    /* align-self: flex-start;  */
     margin-bottom: 20px; 
 }
 
 .hero-image {
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
+}
+
+.text-container {
+    max-width: 800px; /* Set a maximum width for the text */
+    text-align: center; /* Center the text */
+    padding: 0 20px; /* Add some horizontal padding */
 }
 
 .hero-title {
     color: #8cff6e;
-    text-align: center;
-    font-family: "lora", Arial, Helvetica, sans-serif;
+    font-family: "Lora", Arial, Helvetica, sans-serif;
+    margin-bottom: 10px; /* Add space below the title */
 }
 
 .hero-paragraph {
-    text-align: center;
     color: white;
     font-family: "Open Sans", sans-serif;
+    line-height: 1.5; /* Increase line height for better readability */
 }

@@ -46,19 +46,42 @@
     color: rgb(140, 255, 110);
 }
 
+.hamburger {
+    display: none; /* Hidden by default */
+    cursor: pointer;
+}
+
+.mobile-menu-container {
+    display: none; /* Hidden by default */
+    align-items: center; /* Align items in the center */
+}
+
 @media (max-width: 768px) {
     .navbar {
-        flex-direction: column; /* Stack items vertically */
-        height: auto; /* Allow height to adjust */
+        flex-direction: row; /* Keep items in a row */
+        justify-content: space-between; /* Space between logo and mobile menu */
     }
 
     .navbar-links {
+        display: none; /* Hide links by default */
         flex-direction: column; /* Stack links vertically */
-        align-items: flex-start; /* Align links to the start */
-        width: 100%; /* Full width */
+        position: absolute; /* Position links absolutely */
+        top: 120px; /* Adjust according to your navbar height */
+        left: 0;
+        width: 100%;
+        background: rgb(7, 28, 33); /* Background for the dropdown */
+        padding: 1rem 0; /* Padding for dropdown */
     }
 
-    .navbar-links li {
-        margin: 0.5rem 0; /* Space between links */
+    .navbar-links.open {
+        display: flex; /* Show links when open */
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger icon on mobile */
+    }
+
+    .mobile-menu-container {
+        display: flex; /* Show container on mobile */
     }
 }

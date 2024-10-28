@@ -5,25 +5,26 @@ import peaImage from '../../assets/pea.svg'; // Adjust the path as needed
 
 const Hero = () => {
   // Animation variants
-  const shake = {
-    shake: {
-      x: [0, -10, 10, -10, 0], // Shake effect
-      transition: { duration: 0.5, repeat: Infinity }
-    }
+  const rotate = {
+    initial: { rotate: -75 }, // Start from -90 degrees
+    animate: {
+      rotate: [0, -75], // Rotate to -90 degrees then back
+      transition: { duration: 2 },
+    },
   };
 
   const slideIn = {
     hidden: { opacity: 0, y: 50 }, // Start hidden
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } } // Slide in
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }, // Slide in
   };
 
   return (
     <div className="container">
       <motion.div
         className="image-container"
-        variants={shake}
-        initial="shake"
-        animate="shake"
+        initial="initial"
+        animate="animate"
+        variants={rotate}
       >
         <img className="hero-image" src={peaImage} alt="Pea" />
       </motion.div>
