@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import contactUs from '../../assets/contact_us.svg'
 
 const ContactUs = () => {
    const [data, setData] = useState({ name: '', description: '' });
@@ -21,7 +22,7 @@ const ContactUs = () => {
       <h1 className="modal-header">Contact Us</h1>
       <form onSubmit={handleSubmit}>
         <div className="modal-form-group">
-          <label htmlFor="name">Name</label>
+          <label htmlFor="name">Name:</label>
           <input
             type="text"
             name="name"
@@ -31,7 +32,7 @@ const ContactUs = () => {
           />
         </div>
         <div className="modal-form-group">
-          <label htmlFor="description">Description</label>
+          <label htmlFor="description">Description: </label>
           <textarea
             name="description"
             placeholder="How may we be of assistance to you"
@@ -45,10 +46,12 @@ const ContactUs = () => {
         </button>
       </form>
     </div>
-    <img className="contact-image" alt="contact-us"/>
+    <div className="image-container">
+    <img src={contactUs} className="contact-image" alt="contact-us"/>
+    </div>
     </div>
     
   )
 }
 
-export default ContactUs
+export default ContactUs;

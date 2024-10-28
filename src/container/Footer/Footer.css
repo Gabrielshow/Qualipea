@@ -16,10 +16,11 @@
     margin-bottom: 20px; /* Add margin for spacing */
 }
 
-img.footer-logo {
-    height: 50px; /* Adjust to desired height */
-    width: 50px;  /* Adjust to desired width */
-    object-fit: cover; /* Ensures the image covers the area */
+.footer-logo img {
+    height: 100px; /* Adjust to desired height */
+    width: 100px;  /* Adjust to desired width */
+    /* object-fit: cover; Ensures the image covers the area */
+    cursor: pointer;
 }
 
 .footer-links {

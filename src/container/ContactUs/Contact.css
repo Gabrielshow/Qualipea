@@ -8,6 +8,34 @@
     align-items: center;
 }
 
+.modal-form-container {
+    height: 700px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.image-container{
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-image{
+    height: 300px;
+    width: 300px;
+}
+
+.modal-header {
+    color: #8cff6e;
+}
+
+
+
+
 @media (max-width: 768px) {
     .modal-container{
         display: flex;
