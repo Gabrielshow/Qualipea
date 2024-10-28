@@ -1,0 +1,31 @@
+.container {
+    min-width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    background: url('../../assets/Qualipea.png') repeat;
+}
+
+.image-container {
+    /* align-self: flex-start;  */
+    margin-bottom: 20px; 
+}
+
+.hero-image {
+    height: 100px;
+    width: 100px;
+}
+
+.hero-title {
+    color: #8cff6e;
+    text-align: center;
+    font-family: "lora", Arial, Helvetica, sans-serif;
+}
+
+.hero-paragraph {
+    text-align: center;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+}
