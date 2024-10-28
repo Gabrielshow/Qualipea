@@ -1,0 +1,26 @@
+.modal-container {
+    background: white;
+    height: 900px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .modal-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .modal-form-container {
+        flex: 1;
+    }
+
+    .contact-image {
+        flex: 1;
+    }
+}
