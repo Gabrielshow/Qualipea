@@ -10,9 +10,9 @@ const App = () => {
     <ThemeProvider>
      <Navbar/>
      <Hero/>
-     <About/>
-     <Content/>
-     <Blog/>
+     {/* <About/> */}
+     {/* <Content/> */}
+     {/* <Blog/> */}
      <ContactUs/>
      <Footer/>
     </ThemeProvider>

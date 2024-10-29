@@ -27,7 +27,7 @@ const ContactUs = () => {
           <input
             type="text"
             name="name"
-            placeholder="Kindly tell us your name"
+            placeholder="Kindly tell us your name..."
             value={data.name}
             onChange={handleChange}
           />
@@ -36,7 +36,7 @@ const ContactUs = () => {
           <label htmlFor="description" className="left">Description: </label>
           <textarea
             name="description"
-            placeholder="How may we be of assistance to you"
+            placeholder="How may we be of assistance to you?"
             value={data.description}
             onChange={handleChange}
           />

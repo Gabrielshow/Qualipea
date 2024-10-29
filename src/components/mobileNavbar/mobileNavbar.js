@@ -12,7 +12,7 @@ const MobileNavbar = ({ isOpen, toggleMobileMenu }) => {
 
   return (
     <div className="mobile-menu-container">
-      <ThemeToggle />
+      {/* <ThemeToggle /> */}
 
       <motion.ul
         className={`navbar-links ${isOpen ? 'open' : ''}`}
