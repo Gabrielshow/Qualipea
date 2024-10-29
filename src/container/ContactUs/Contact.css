@@ -6,6 +6,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 20px; /* Added padding for better spacing */
 }
 
 .modal-form-container {
@@ -16,47 +17,72 @@
     align-items: center;
     text-align: center;
     border-radius: 20px;
+    background-color: #f9f9f9; /* Light background for contrast */
+    padding: 20px; /* Added padding for better spacing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
 }
 
-.image-container{
+.image-container {
     height: 700px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.contact-image{
+.contact-image {
     height: 300px;
     width: 300px;
 }
 
 .modal-header {
     color: #8cff6e;
+    font-size: 2rem; /* Increased font size for prominence */
+    margin-bottom: 20px; /* Added margin for spacing */
 }
 
- .modal-form-group {
+.modal-form-group {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    justify-content: space-between;
-    /* align-items: center; */
     padding: 10px;
- }
+}
 
- .modal-form-group input[type="text"]{
-    height: 40px;
+.modal-form-group input[type="text"],
+.modal-form-group textarea {
+    height: 40px; /* For input */
+    padding: 10px; /* Added padding for comfort */
     box-shadow: 2px 2px 1px 1px #8cff6e;
-    border: none;
- }
- 
+    border: 2px solid #8cff6e; /* Border matching the green theme */
+    border-radius: 5px; /* Rounded corners */
+    transition: border-color 0.3s; /* Smooth border transition */
+}
 
+.modal-form-group input[type="text"]:focus,
+.modal-form-group textarea:focus {
+    border-color: #76e679; /* Lighter green on focus */
+}
 
+.left {
+    text-align: left;
+    font-weight: bold; /* Bold labels for better visibility */
+}
 
+.modal-button {
+    background-color: #8cff6e; /* Green background */
+    color: white; /* White text for contrast */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for a larger button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
 
+.modal-button:hover {
+    background-color: #76e679; /* Lighter green on hover */
+}
 
 @media (max-width: 768px) {
-    .modal-container{
-        display: flex;
+    .modal-container {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;

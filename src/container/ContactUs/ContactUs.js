@@ -18,12 +18,12 @@ const ContactUs = () => {
     // Add your submission logic here
   };
   return (
-    <div modal-container>
+    <div className="modal-container">
     <div className="modal-form-container">
       <h1 className="modal-header">Contact Us</h1>
       <form onSubmit={handleSubmit}>
         <div className="modal-form-group">
-          <label htmlFor="name">Name:</label>
+          <label htmlFor="name" className="left">Name:</label>
           <input
             type="text"
             name="name"
@@ -33,7 +33,7 @@ const ContactUs = () => {
           />
         </div>
         <div className="modal-form-group">
-          <label htmlFor="description">Description: </label>
+          <label htmlFor="description" className="left">Description: </label>
           <textarea
             name="description"
             placeholder="How may we be of assistance to you"
