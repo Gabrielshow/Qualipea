@@ -10,4 +10,4 @@ const separator = () => {
   )
 }
 
-export default separator
+export default separator;

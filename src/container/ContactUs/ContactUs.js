@@ -21,6 +21,7 @@ const ContactUs = () => {
     <div className="modal-container">
     <div className="modal-form-container">
       <h1 className="modal-header">Contact Us</h1>
+       <img src={contactUs} className="contact-image" alt="contact-us"/>
       <form onSubmit={handleSubmit}>
         <div className="modal-form-group">
           <label htmlFor="name" className="left">Name:</label>
@@ -41,14 +42,10 @@ const ContactUs = () => {
             onChange={handleChange}
           />
         </div>
-
-        <button className="modal-button" type="submit">
-          Submit
-        </button>
       </form>
-    </div>
-    <div className="image-container">
-    <img src={contactUs} className="contact-image" alt="contact-us"/>
+      <button className="modal-button" type="submit">
+          Submit
+      </button>
     </div>
     </div>
     

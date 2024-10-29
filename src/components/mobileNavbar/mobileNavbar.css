@@ -49,6 +49,7 @@
 .hamburger {
     display: none; /* Hidden by default */
     cursor: pointer;
+    position: relative;
 }
 
 .mobile-menu-container {
@@ -85,11 +86,17 @@
     }
 
     .hamburger {
-        display: block; /* Show hamburger icon on mobile */
+        display: block;
+        position: absolute;
     }
 
     .mobile-menu-container {
-        display: flex; /* Show container on mobile */
+        display: flex;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 120px;
+        z-index: 10;
     }
 
     .desktop-menu-container{

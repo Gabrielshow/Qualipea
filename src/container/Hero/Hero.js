@@ -38,7 +38,7 @@ const Hero = () => {
           Transform Your Plate with Qualipea.
         </h2>
         <p className="hero-paragraph">
-          Discover the power of affordable, healthy peas that enhance your meals and nourish your family. At Qualipea, we are dedicated to providing high-quality beans that are accessible to all. Join us in promoting wholesome eating for a healthier, happier community. Experience the difference with Qualipea—where quality meets affordability.
+          Discover the power of affordable, healthy peas that enhance your meals and nourish your family. 
         </p>
       </motion.div>
     </div>

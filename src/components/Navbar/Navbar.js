@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <img src={images.logo1} alt="logo" />
+        <img src={images.logo2} alt="logo" />
       </div>
 
       <div className="desktop-menu-container">
@@ -32,7 +32,7 @@ const Navbar = () => {
       <div className="hamburger" onClick={toggleMobileMenu}>
         {isMobileMenuOpen ? <FaTimes size={30} color="white" /> : <FaBars size={30} color="white" />}
       </div>
-
+      
       {/* Render Mobile Navbar on small screens */}
       {isMobileMenuOpen && (
         <MobileNavbar isOpen={isMobileMenuOpen} toggleMobileMenu={toggleMobileMenu} />
