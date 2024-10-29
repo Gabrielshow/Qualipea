@@ -50,6 +50,8 @@
     display: none; /* Hidden by default */
     cursor: pointer;
     position: relative;
+    right: 20px;
+    z-index: 20px;
 }
 
 .mobile-menu-container {
@@ -67,7 +69,8 @@
 @media (max-width: 768px) {
     .navbar {
         flex-direction: row; /* Keep items in a row */
-        justify-content: space-between; /* Space between logo and mobile menu */
+        justify-content: space-between;
+        position: relative;
     }
 
     .navbar-links {
@@ -88,14 +91,15 @@
     .hamburger {
         display: block;
         position: absolute;
+        margin-right: 20px;
     }
 
     .mobile-menu-container {
         display: flex;
         position: absolute;
-        right: 0;
-        left: 0;
-        top: 120px;
+        right: 20px;
+        top: 20px;
+        right: 20px;
         z-index: 10;
     }
 

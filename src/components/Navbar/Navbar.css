@@ -94,8 +94,8 @@
     .mobile-menu-container {
         display: flex;
         position: absolute;
-        right: 0;
-        left: 0;
+        /* right: 0;
+        left: 0; */
         top: 120px;
         z-index: 10;
     }
