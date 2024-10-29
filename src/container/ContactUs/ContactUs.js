@@ -18,7 +18,7 @@ const ContactUs = () => {
     // Add your submission logic here
   };
   return (
-    <div className="modal-container">
+    <div className="modal-container" id="contact">
     <div className="modal-form-container">
       <h1 className="modal-header">Contact Us</h1>
        <img src={contactUs} className="contact-image" alt="contact-us"/>

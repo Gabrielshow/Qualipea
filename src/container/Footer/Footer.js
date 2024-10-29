@@ -7,7 +7,7 @@ import './Footer.css';
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
-    <div className="nav">
+    <div className="nav" id="footer">
       <div className="logo">
         <img src={images.logo2} alt="Qualipea" className="image"/>
       </div>
