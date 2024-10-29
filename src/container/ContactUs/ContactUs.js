@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import contactUs from '../../assets/contact_us.svg'
+import './Contact.css';
 
 const ContactUs = () => {
    const [data, setData] = useState({ name: '', description: '' });
