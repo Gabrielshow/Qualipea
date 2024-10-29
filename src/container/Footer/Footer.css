@@ -46,3 +46,11 @@
 .icon:hover {
     color: rgb(140, 255, 110) !important;
 }
+
+.copy {
+    color: white;
+}
+
+.green {
+    color: #8cff6e;
+}

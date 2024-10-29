@@ -18,7 +18,7 @@ const Footer = () => {
       <a href="#Threads"> <FaSquareThreads size={24} className="icon" /> </a>
       </div>
 
-      <p> &copy;  {currentYear} <span>Qualipea</span>. All rights reserved.</p>
+      <p className="copy"> &copy;  {currentYear} <span className="green">Qualipea</span>. All rights reserved.</p>
     </div>
   )
 }

@@ -11,6 +11,7 @@
 .modal-form-container {
     height: 700px;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     text-align: center;
@@ -33,6 +34,23 @@
     color: #8cff6e;
 }
 
+ .modal-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding: 10px;
+ }
+
+ .modal-form-group input[type="text"]{
+    height: 40px;
+    box-shadow: 2px 2px 1px 1px #8cff6e;
+    border: none;
+ }
+ 
+
+
 
 
 
@@ -46,6 +64,11 @@
 
     .modal-form-container {
         flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 2px;
+        align-items: center;
     }
 
     .contact-image {
