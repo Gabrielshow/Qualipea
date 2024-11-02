@@ -2,7 +2,7 @@ import React from 'react';
 import { images } from "../../../constants/images";
 import './signin.css';
 
-const signin = () => {
+const Signin = () => {
   return (
    <div className="container"> 
         <div className="image-container">
@@ -37,4 +37,4 @@ const signin = () => {
   )
 }
 
-export default signin
+export default Signin;

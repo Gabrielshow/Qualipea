@@ -3,7 +3,7 @@ import images from "../../../constants/images";
 import './login.css';
 import axios from 'axios';
 
-const login = () => {
+const Login = () => {
     const [ data , setData ] = useState({ email: "", password: ""});
     const handleChange = (e) => {
         const {name, value } = e.target;
@@ -53,4 +53,4 @@ const login = () => {
   )
 }
 
-export default login
+export default Login;
