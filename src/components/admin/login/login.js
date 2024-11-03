@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import images from "../../../constants/images";
 import './login.css';
 import axios from 'axios';
+import image from '../../../assets/signin.jpg';
 
 const Login = () => {
     const [ data , setData ] = useState({ email: "", password: ""});
@@ -22,7 +23,7 @@ const Login = () => {
   return (
     <div className="container"> 
         <div className="image-container">
-            <img src="" alt="login-image"/>
+            <img src={image} alt="login-image"/>
         </div>
 
         <div className="login-group">

@@ -1,12 +1,14 @@
 import React from 'react';
 import { images } from "../../../constants/images";
 import './signin.css';
+import image from '../../../assets/sigin.jpg';
+
 
 const Signin = () => {
   return (
    <div className="container"> 
         <div className="image-container">
-            <img src="" alt="login-image"/>
+            <img src={image} alt="login-image"/>
         </div>
 
         <div className="login-group">
