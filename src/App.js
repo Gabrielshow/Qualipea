@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom'
 
 import { Home } from './container';
-import { Login, Signin, Dashboard  } from './components/admin';
+import { Login, Signin, Dashboard  } from './components';
 // import { Signin } from './components/admin/signin/Signin.js';
 import { ThemeProvider } from './context/ThemeContext';
 // import { Dashboard } from './components/admin/admin/Dashboard.js'
