@@ -5,7 +5,7 @@ const separator = () => {
   return (
     <div>
         {/* perhaps a befitting svg animation could be here */}
-        <hr className="page-separator">
+        <hr className="page-separator"/>
     </div>
   )
 }

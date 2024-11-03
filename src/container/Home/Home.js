@@ -1,6 +1,10 @@
 import React from 'react';
-import { About , Blog, Content, Footer, ContactUs, Hero} from './container';
-import { Navbar } from './components';
+import { Navbar } from '../../components';
+import Hero from '../Hero/Hero';
+import ContactUs from '../ContactUs/ContactUs';
+import Footer from '../Footer/Footer';
+// import About from '../About/About';
+// import Content from '../Content/Content';
 
 const Home = () => {
   return (
