@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import images from "../../../constants/images";
-import './login.css';
+import './Login.css';
 import axios from 'axios';
 import image from '../../../assets/signin.jpg';
 

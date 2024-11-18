@@ -15,7 +15,6 @@ const ContactUs = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add your submission logic here
   };
   return (
     <div className="modal-container" id="contact">

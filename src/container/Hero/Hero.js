@@ -19,7 +19,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="container">
+    <div className="hero-container">
       <motion.div
         className="image-container"
         initial="initial"
