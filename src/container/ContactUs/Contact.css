@@ -1,6 +1,6 @@
 .modal-container {
     background: white;
-    height: auto; /* Allow height to adjust based on content */
+    height: 700px; 
     width: 100%;
     display: flex;
     justify-content: center;

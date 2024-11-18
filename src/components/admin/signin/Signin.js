@@ -1,10 +1,24 @@
-import React from 'react';
-import { images } from "../../../constants/images";
-import './signin.css';
-import image from '../../../assets/sigin.jpg';
+import React, { useState } from 'react';
+import { images } from "../../../constants";
+import './Signin.css';
+import image from '../../../assets/signin.jpg';
 
 
 const Signin = () => {
+  const [data, setData] = useState({
+        email: '',
+        password: '',
+    });
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setData({ ...data, [name]: value });
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log(data);
+    };
   return (
    <div className="container"> 
         <div className="image-container">
