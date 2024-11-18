@@ -1,0 +1,39 @@
+.container {
+    height: 700px;
+    background: url('../../assets/Qualipea.png') repeat;
+    overflow: hidden; /* Prevent overflow from image */
+    /* padding: 40px 20px; Add padding for better spacing */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.hero-image {
+    height: 200px;
+    width: 200px;
+}
+
+.text-container {
+    max-width: 800px;
+    text-align: center;
+    /* padding: 0 20px; */
+}
+
+.hero-title {
+    color: #8cff6e;
+    font-family: "Lora", Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
+
+.hero-paragraph {
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.5;
+}
