@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import  images  from "../../../constants/images";
 import './Login.css';
 // import axios from 'axios';
-import image from '../../../assets/signin.jpg';
+// import image from '../../../assets/signin.jpg';
 
 const Login = () => {
     const [data, setData] = useState({ email: "", password: "" });
