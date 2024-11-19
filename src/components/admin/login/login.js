@@ -5,53 +5,59 @@ import axios from 'axios';
 import image from '../../../assets/signin.jpg';
 
 const Login = () => {
-    const [ data , setData ] = useState({ email: "", password: ""});
+    const [data, setData] = useState({ email: "", password: "" });
+
     const handleChange = (e) => {
-        const {name, value } = e.target;
+        const { name, value } = e.target;
         setData((prevData) => ({
             ...prevData,
             [name]: value,
         }));
-
     };
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        //connect to the backend easy peasy;
+        // Connect to the backend
+    };
 
-    }
-  return (
-    <div className="container"> 
-        <div className="image-container">
-            <img src={image} alt="login-image"/>
+    return (
+        <div className="login-container"> 
+            <div className="login-image-container">
+                <img src={image} alt="login" />
+            </div>
+
+            <div className="login-group">
+                <img className="login-group-image" src={images.logo2} alt="logo" />
+                <form className="field" onSubmit={handleSubmit}>
+                    <div className="form-group">
+                        <label htmlFor="email">Email</label>
+                        <input 
+                            id="email" 
+                            type="text" 
+                            name="email" 
+                            placeholder="Enter your email" 
+                            value={data.email}
+                            onChange={handleChange} 
+                        />
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="password">Password</label>
+                        <input 
+                            id="password" 
+                            type="password" 
+                            name="password" 
+                            placeholder="Enter your password"
+                            value={data.password}
+                            onChange={handleChange} 
+                        />
+                    </div>
+                    <button type="submit" className="login-group-button">
+                        Log in
+                    </button>
+                </form>
+            </div>
         </div>
-
-        <div className="login-group">
-            <img className="login-group-image" src={images.logo2} alt="logo"/>
-            <form>
-                <div className="form-group">
-
-                <label htmlfor="email">
-                    Email
-                </label>
-                <input id="email"  type="text" name="email" placeholder="enter your email" value={data.email}
-            onChange={handleChange}/>
-                </div>
-                <div className="form-group">
-
-                <label htmlfor="password">
-                    Password
-                </label>
-                <input id="password" type="password" name="password"/>
-                </div>
-            </form>
-
-            <button onClick={handleSubmit} className="login-group-button">
-                Log in
-            </button>
-        </div>
-    </div>
-  )
+    );
 }
 
 export default Login;

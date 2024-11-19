@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { images } from "../../../constants";
 import './Signin.css';
-import image from '../../../assets/signin.jpg';
+// import image from '../../../assets/signin.jpg';
 
 
 const Signin = () => {
@@ -20,15 +20,15 @@ const Signin = () => {
         console.log(data);
     };
   return (
-   <div className="container"> 
-        <div className="image-container">
-            <img src={image} alt="login-image"/>
+   <div className="signin-container"> 
+        <div className="signin-image-container">
+            <img src={images.q8} alt="signin-image"/>
         </div>
 
-        <div className="login-group">
-            <img className="login-group-image" src={images.logo2} alt="logo"/>
-            <form>
-                <div className="form-group">
+        <div className="signin-group">
+            <img className="signin-group-image" src={images.logo2} alt="logo"/>
+            <form className="signin-field" onSubmit={handleSubmit}>
+                <div className="signin-form-group">
 
                 <label htmlfor="email">
                     Email
@@ -36,7 +36,7 @@ const Signin = () => {
                 <input id="email"  type="text" name="email" placeholder="enter your email" value={data.email}
             onChange={handleChange}/>
                 </div>
-                <div className="form-group">
+                <div className="signin-form-group">
 
                 <label htmlfor="password">
                     Password
@@ -45,7 +45,7 @@ const Signin = () => {
                 </div>
             </form>
 
-            <button onClick={handleSubmit} className="login-group-button">
+            <button onClick={handleSubmit} className="signin-group-button">
                 Sign in
             </button>
         </div>
