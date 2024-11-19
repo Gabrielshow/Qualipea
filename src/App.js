@@ -2,8 +2,10 @@ import React from 'react';
 import {BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 import { Home } from './container';
-import { Login, Signin, Dashboard  } from './components';
-// import { Signin } from './components/admin/signin/Signin.js';
+// import { Login, Signin, Dashboard  } from './components';
+import { Login } from './components/admin/Login/Login.js';
+import { Signin } from './components/admin/Signin/Signin.js';
+import { Dashboard } from './components/admin/Dashboard/Dashboard.js';
 import { ThemeProvider } from './context/ThemeContext';
 // import { Dashboard } from './components/admin/admin/Dashboard.js'
 
