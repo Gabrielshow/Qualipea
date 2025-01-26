@@ -4,8 +4,8 @@ import axios from 'axios';
 const Dashboard = () => {
   const [openModal, setOpenModal] = useState(false);
   const [articleContent, setArticleContent] = useState(''); // Store the content of the article
-  const [image, setImage] = useState<File | null>(null); 
-  const [imagePreview, setImagePreview] = useState<string | null>(null); // Image preview URL
+  const [image, setImage] = useState(null); 
+  const [imagePreview, setImagePreview] = useState(null); // Image preview URL
 
   // Function to handle text input change
   const handleOnChange = (e) => {
@@ -36,14 +36,14 @@ const Dashboard = () => {
         formData.append('image', image); // Append image to FormData if available
       }
 
-      const response = await axios.post('/your-backend-url/articles', formData, {
+      const response = await axios.post('http://localhost:3000/api/blogs', formData, {
         headers: {
           'Content-Type': 'multipart/form-data', // This header is required for file uploads
         },
       });
 
       console.log('Article submitted successfully:', response.data);
-      setOpenModal(false); // Close the modal on success
+      setOpenModal(false);
     } catch (err) {
       console.error('Error submitting article:', err);
     }
@@ -71,7 +71,7 @@ const Dashboard = () => {
               accept="image/*"
               style={{ display: 'none' }}
             />
-            {imagePreview && <img src={imagePreview} alt="Image Preview" width="100px" />}
+            {imagePreview && <img src={imagePreview} alt="Preview-Image" width="100px" />}
           </div>
 
           {/* Text input for the article content */}
